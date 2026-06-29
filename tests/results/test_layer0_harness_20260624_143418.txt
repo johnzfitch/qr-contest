@@ -1,0 +1,37 @@
+=== Layer 0 — harness self-test  (device=cpu, eps32=1.192e-07) ===
+  [PASS] L0.1 geqrf check       b4_n32_dense  res/tol=1.8e-03 ortho/tol=3.6e-03
+  [PASS] L0.1 geqrf check_percol b4_n32_dense  percol_ratio=3.3e-03
+  [PASS] L0.1 geqrf check       b4_n176_dense  res/tol=7.9e-04 ortho/tol=1.9e-03
+  [PASS] L0.1 geqrf check_percol b4_n176_dense  percol_ratio=1.4e-03
+  [PASS] L0.1 geqrf check       b4_n352_dense  res/tol=4.2e-04 ortho/tol=1.5e-03
+  [PASS] L0.1 geqrf check_percol b4_n352_dense  percol_ratio=9.3e-04
+  [PASS] L0.1 geqrf check       b4_n512_dense  res/tol=2.8e-04 ortho/tol=1.2e-03
+  [PASS] L0.1 geqrf check_percol b4_n512_dense  percol_ratio=7.7e-04
+  [PASS] L0.1 geqrf check       b4_n1024_dense  res/tol=1.5e-04 ortho/tol=9.3e-04
+  [PASS] L0.1 geqrf check_percol b4_n1024_dense  percol_ratio=5.1e-04
+  [skip] L0.1 b8_n2048_dense (n>1024 on CPU)
+  [skip] L0.1 b2_n4096_dense (n>1024 on CPU)
+  [PASS] L0.1 geqrf check       b4_n512_mixed  res/tol=5.4e-04 ortho/tol=1.3e-03
+  [PASS] L0.1 geqrf check_percol b4_n512_mixed  percol_ratio=7.6e-04
+  [PASS] L0.1 geqrf check       b4_n1024_mixed  res/tol=3.9e-04 ortho/tol=9.3e-04
+  [PASS] L0.1 geqrf check_percol b4_n1024_mixed  percol_ratio=5.1e-04
+  [PASS] L0.1 geqrf check       b4_n512_rankdef  res/tol=6.0e-04 ortho/tol=1.2e-03
+  [PASS] L0.1 geqrf check_percol b4_n512_rankdef  percol_ratio=6.5e-04
+  [PASS] L0.1 geqrf check       b4_n512_clustered  res/tol=6.4e-04 ortho/tol=1.5e-03
+  [PASS] L0.1 geqrf check_percol b4_n512_clustered  percol_ratio=6.8e-04
+  [PASS] L0.1 geqrf check       b4_n1024_nearrank  res/tol=3.7e-04 ortho/tol=8.8e-04
+  [PASS] L0.1 geqrf check_percol b4_n1024_nearrank  percol_ratio=4.3e-04
+  [PASS] L0.2 tol values  ftol=1.526e-04 otol=7.629e-04
+  [PASS] L0.2 identity residual ~0  factor=0.0e+00 ortho=0.0e+00
+  [PASS] L0.2 diagonal residual ~0  factor=0.0e+00
+  [PASS] L0.3 determinism (same seed)  
+  [PASS] L0.3 seed sensitivity  
+  [PASS] L0.3 rankdef tail<<retained  tail_max=5.9e-08  kept_min=1.0e-01
+  [PASS] L0.3 clustered 1/1e-6 split  big_min=1.00e+00 small_max=1.11e-06
+  [PASS] L0.3 mixed has stress slots  
+  [PASS] L0.3 banded zero off-band  
+  [PASS] L0.3 uppertri is upper  
+  [PASS] L0.4 reconstruct_via_geqrf passes  factor=2.8e-07/1.5e-04
+  [PASS] L0.4 reconstruct_via_lu passes  factor=2.6e-07/1.5e-04
+
+Layer 0 — harness self-test: 32/32 passed

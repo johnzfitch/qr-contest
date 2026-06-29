@@ -1,0 +1,26 @@
+Generating SQLite file results/nsys_n1024_b60.sqlite from results/nsys_n1024_b60.nsys-rep
+Processing [results/nsys_n1024_b60.sqlite] with [/opt/nvidia/nsight-compute/2025.3.0/host/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns) | Med (ns) | Min (ns) | Max (ns) | StdDev (ns) |                                                 Name                                                 |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+|     76.1 |       602006105 |       828 | 727060.5 | 726717.5 |    17120 |  1411099 |    407878.4 | panel_geqrt_kernel(float *, float *, float *, int, int, int)                                         |
+|      7.3 |        57505124 |      1610 |  35717.5 |   2496.0 |     2240 |   188767 |     54000.8 | void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n… |
+|      6.1 |        48363993 |       805 |  60079.5 |  46336.0 |     1952 |   165472 |     52857.6 | void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n… |
+|      4.4 |        34732656 |       483 |  71910.3 |  73855.0 |    14464 |   125215 |     34542.1 | void cutlass::Kernel2<cutlass_80_simt_sgemm_128x64_8x5_nn_align1>(T1::Params)                        |
+|      3.3 |        25724744 |       966 |  26630.2 |   6816.0 |     3648 |   101376 |     31138.5 | cutlass3x_sm100_simt_sgemm_f32_f32_f32_f32_f32_64x32x16_1x1x1_3_ntn_align1_bias_f32_relu             |
+|      1.2 |         9653566 |       644 |  14990.0 |   7008.0 |     3328 |    57088 |     15977.5 | cutlass3x_sm100_simt_sgemm_f32_f32_f32_f32_f32_32x32x16_1x1x1_3_ntn_align1_bias_f32_relu             |
+|      0.7 |         5561645 |       138 |  40301.8 |  31200.0 |    13664 |    82943 |     23605.1 | void cutlass::Kernel2<cutlass_80_simt_sgemm_64x128_8x5_nn_align1>(T1::Params)                        |
+|      0.5 |         4267506 |       805 |   5301.2 |   5376.0 |     2656 |     7936 |      1622.2 | void at::native::triu_tril_kernel<float, int, (bool)0, (int)2, (bool)0>(at::cuda::detail::TensorInf… |
+|      0.2 |         1391641 |       874 |   1592.3 |   1504.0 |     1120 |     2144 |       178.0 | void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, std::array<c… |
+|      0.1 |          560480 |        69 |   8122.9 |   9728.0 |     4384 |    10368 |      2640.4 | cutlass3x_sm100_simt_sgemm_f32_f32_f32_f32_f32_64x32x16_1x1x1_3_nnn_align1_bias_f32_relu             |
+|      0.1 |          478236 |        23 |  20792.9 |  20800.0 |    20256 |    21151 |       223.8 | void magma_sgemmEx_kernel<float, float, float, (bool)0, (bool)0, (int)6, (int)3, (int)5, (int)3, (i… |
+|      0.0 |          307356 |        69 |   4454.4 |   4480.0 |     3680 |     5280 |       575.9 | cutlass3x_sm100_simt_sgemm_f32_f32_f32_f32_f32_32x32x16_1x1x1_3_nnn_align1_bias_f32_relu             |
+|      0.0 |          174815 |         1 | 174815.0 | 174815.0 |   174815 |   174815 |         0.0 | void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n… |
+|      0.0 |          164318 |        23 |   7144.3 |   7136.0 |     6944 |     7392 |        94.2 | void cutlass::Kernel2<cutlass_80_simt_sgemm_128x32_8x5_nn_align1>(T1::Params)                        |
+|      0.0 |          119519 |         1 | 119519.0 | 119519.0 |   119519 |   119519 |         0.0 | void at::native::<unnamed>::distribution_elementwise_grid_stride_kernel<float, (int)4, void at::nat… |
+|      0.0 |           32576 |        23 |   1416.3 |   1376.0 |     1216 |     1600 |       171.0 | void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n… |
+|      0.0 |            1696 |         1 |   1696.0 |   1696.0 |     1696 |     1696 |         0.0 | void <unnamed>::elementwise_kernel_with_index<int, at::native::logspace_cuda_out(const c10::Scalar … |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+

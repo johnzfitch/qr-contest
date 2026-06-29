@@ -1,0 +1,39 @@
+=== Layer 0 — harness self-test  (device=cuda, eps32=1.192e-07) ===
+  [PASS] L0.1 geqrf check       b20_n32_dense  res/tol=2.7e-03 ortho/tol=4.0e-03
+  [PASS] L0.1 geqrf check_percol b20_n32_dense  percol_ratio=3.6e-03
+  [PASS] L0.1 geqrf check       b40_n176_dense  res/tol=5.8e-04 ortho/tol=1.7e-03
+  [PASS] L0.1 geqrf check_percol b40_n176_dense  percol_ratio=8.7e-04
+  [PASS] L0.1 geqrf check       b40_n352_dense  res/tol=5.0e-04 ortho/tol=1.8e-03
+  [PASS] L0.1 geqrf check_percol b40_n352_dense  percol_ratio=1.3e-03
+  [PASS] L0.1 geqrf check       b640_n512_dense  res/tol=3.9e-04 ortho/tol=1.7e-03
+  [PASS] L0.1 geqrf check_percol b640_n512_dense  percol_ratio=5.3e-04
+  [PASS] L0.1 geqrf check       b60_n1024_dense  res/tol=1.7e-04 ortho/tol=1.1e-03
+  [PASS] L0.1 geqrf check_percol b60_n1024_dense  percol_ratio=2.6e-04
+  [PASS] L0.1 geqrf check       b8_n2048_dense  res/tol=1.1e-04 ortho/tol=7.5e-04
+  [PASS] L0.1 geqrf check_percol b8_n2048_dense  percol_ratio=2.0e-04
+  [PASS] L0.1 geqrf check       b2_n4096_dense  res/tol=8.1e-05 ortho/tol=4.8e-04
+  [PASS] L0.1 geqrf check_percol b2_n4096_dense  percol_ratio=1.7e-04
+  [PASS] L0.1 geqrf check       b640_n512_mixed  res/tol=5.4e-04 ortho/tol=1.7e-03
+  [PASS] L0.1 geqrf check_percol b640_n512_mixed  percol_ratio=5.6e-04
+  [PASS] L0.1 geqrf check       b60_n1024_mixed  res/tol=2.1e-04 ortho/tol=1.0e-03
+  [PASS] L0.1 geqrf check_percol b60_n1024_mixed  percol_ratio=2.6e-04
+  [PASS] L0.1 geqrf check       b640_n512_rankdef  res/tol=5.2e-04 ortho/tol=1.6e-03
+  [PASS] L0.1 geqrf check_percol b640_n512_rankdef  percol_ratio=5.9e-04
+  [PASS] L0.1 geqrf check       b640_n512_clustered  res/tol=4.9e-04 ortho/tol=1.6e-03
+  [PASS] L0.1 geqrf check_percol b640_n512_clustered  percol_ratio=5.1e-04
+  [PASS] L0.1 geqrf check       b60_n1024_nearrank  res/tol=2.1e-04 ortho/tol=1.1e-03
+  [PASS] L0.1 geqrf check_percol b60_n1024_nearrank  percol_ratio=2.3e-04
+  [PASS] L0.2 tol values  ftol=1.526e-04 otol=7.629e-04
+  [PASS] L0.2 identity residual ~0  factor=0.0e+00 ortho=0.0e+00
+  [PASS] L0.2 diagonal residual ~0  factor=0.0e+00
+  [PASS] L0.3 determinism (same seed)  
+  [PASS] L0.3 seed sensitivity  
+  [PASS] L0.3 rankdef tail<<retained  tail_max=6.1e-08  kept_min=1.0e-01
+  [PASS] L0.3 clustered 1/1e-6 split  big_min=1.00e+00 small_max=1.12e-06
+  [PASS] L0.3 mixed has stress slots  
+  [PASS] L0.3 banded zero off-band  
+  [PASS] L0.3 uppertri is upper  
+  [PASS] L0.4 reconstruct_via_geqrf passes  factor=2.0e-07/1.5e-04
+  [PASS] L0.4 reconstruct_via_lu passes  factor=2.5e-07/1.5e-04
+
+Layer 0 — harness self-test: 36/36 passed

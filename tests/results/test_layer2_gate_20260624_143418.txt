@@ -1,0 +1,62 @@
+=== Layer 2 — correctness gate  (device=cpu, eps32=1.192e-07) ===
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n32_dense  res/gate=0.002
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n176_dense  res/gate=0.000
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n352_dense  res/gate=0.000
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n512_dense  res/gate=0.000
+  [skip] L2.1 a1(fp32x1/1t,nb64) b60_n1024_dense (n>512 on CPU)
+  [skip] L2.1 a1(fp32x1/1t,nb64) b8_n2048_dense (n>512 on CPU)
+  [skip] L2.1 a1(fp32x1/1t,nb64) b2_n4096_dense (n>512 on CPU)
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n512_mixed  res/gate=0.000
+  [skip] L2.1 a1(fp32x1/1t,nb64) b60_n1024_mixed (n>512 on CPU)
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n512_rankdef  res/gate=0.000
+  [PASS] L2.1 a1(fp32x1/1t,nb64) b4_n512_clustered  res/gate=0.000
+  [skip] L2.1 a1(fp32x1/1t,nb64) b60_n1024_nearrank (n>512 on CPU)
+  [PASS] L2.3 a1(fp32x1/1t,nb64) per-matrix mixed b4_n512  4/4 matrices, res/gate=0.000
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n32_dense  res/gate=0.002
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n176_dense  res/gate=0.000
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n352_dense  res/gate=0.000
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n512_dense  res/gate=0.000
+  [skip] L2.1 a4(bf16x3/9t,nb64) b60_n1024_dense (n>512 on CPU)
+  [skip] L2.1 a4(bf16x3/9t,nb64) b8_n2048_dense (n>512 on CPU)
+  [skip] L2.1 a4(bf16x3/9t,nb64) b2_n4096_dense (n>512 on CPU)
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n512_mixed  res/gate=0.000
+  [skip] L2.1 a4(bf16x3/9t,nb64) b60_n1024_mixed (n>512 on CPU)
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n512_rankdef  res/gate=0.000
+  [PASS] L2.1 a4(bf16x3/9t,nb64) b4_n512_clustered  res/gate=0.000
+  [skip] L2.1 a4(bf16x3/9t,nb64) b60_n1024_nearrank (n>512 on CPU)
+  [PASS] L2.3 a4(bf16x3/9t,nb64) per-matrix mixed b4_n512  4/4 matrices, res/gate=0.000
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n32_dense  res/gate=0.002
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n176_dense  res/gate=0.001
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n352_dense  res/gate=0.001
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n512_dense  res/gate=0.000
+  [skip] L2.1 a10(fp8x4/10t,nb64) b60_n1024_dense (n>512 on CPU)
+  [skip] L2.1 a10(fp8x4/10t,nb64) b8_n2048_dense (n>512 on CPU)
+  [skip] L2.1 a10(fp8x4/10t,nb64) b2_n4096_dense (n>512 on CPU)
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n512_mixed  res/gate=0.001
+  [skip] L2.1 a10(fp8x4/10t,nb64) b60_n1024_mixed (n>512 on CPU)
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n512_rankdef  res/gate=0.001
+  [PASS] L2.1 a10(fp8x4/10t,nb64) b4_n512_clustered  res/gate=0.001
+  [skip] L2.1 a10(fp8x4/10t,nb64) b60_n1024_nearrank (n>512 on CPU)
+  [PASS] L2.3 a10(fp8x4/10t,nb64) per-matrix mixed b4_n512  4/4 matrices, res/gate=0.001
+  [PASS] L2.2 a1(fp32x1/1t,nb64) banded n512  res/gate=0.000
+  [PASS] L2.2 a1(fp32x1/1t,nb64) rowscaled n512  res/gate=0.000
+  [PASS] L2.2 a1(fp32x1/1t,nb64) nearcollinear n512  res/gate=0.000
+  [PASS] L2.2 a1(fp32x1/1t,nb64) uppertri n512  res/gate=0.000
+  [PASS] L2.2 a4(bf16x3/9t,nb64) banded n512  res/gate=0.000
+  [PASS] L2.2 a4(bf16x3/9t,nb64) rowscaled n512  res/gate=0.000
+  [PASS] L2.2 a4(bf16x3/9t,nb64) nearcollinear n512  res/gate=0.000
+  [PASS] L2.2 a4(bf16x3/9t,nb64) uppertri n512  res/gate=0.000
+  [PASS] L2.2 a10(fp8x4/10t,nb64) banded n512  res/gate=0.002
+  [PASS] L2.2 a10(fp8x4/10t,nb64) rowscaled n512  res/gate=0.002
+  [PASS] L2.2 a10(fp8x4/10t,nb64) nearcollinear n512  res/gate=0.001
+  [PASS] L2.2 a10(fp8x4/10t,nb64) uppertri n512  res/gate=0.000
+  [PASS] L2.4 a1(fp32x1/1t,nb64) dense 3-seed  worst res/gate=0.000
+  [PASS] L2.4 a1(fp32x1/1t,nb64) mixed 3-seed  worst res/gate=0.000
+  [PASS] L2.4 a4(bf16x3/9t,nb64) dense 3-seed  worst res/gate=0.000
+  [PASS] L2.4 a4(bf16x3/9t,nb64) mixed 3-seed  worst res/gate=0.000
+  [PASS] L2.4 a10(fp8x4/10t,nb64) dense 3-seed  worst res/gate=0.000
+  [PASS] L2.4 a10(fp8x4/10t,nb64) mixed 3-seed  worst res/gate=0.001
+  [XFAIL-OK] L2.5 a14(nvfp4x1/1t,nb64) expected-negative  worst res/gate=250.5 (should exceed 1.0)
+  [XFAIL-OK] L2.5 a16(nvfp4x2/3t,nb64) expected-negative  worst res/gate=25.6 (should exceed 1.0)
+
+Layer 2 — correctness gate: 44/44 passed
